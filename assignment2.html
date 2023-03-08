@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Pizza Site</title>
+    <meta name="robots">
+    <meta name="description" content="A Pizza Site">
+    <link rel="stylesheet" href="cssforpizzasite.css"> <!-- Link to the external CSS stylesheet -->
+</head>
+<body>
+<header>
+    <img src="logo.jpg" class="logo" alt="Site Logo"> <!-- Site Logo -->
+    <h1> Pizza Mania</h1>
+    <nav>
+        <ul>
+            <li><a href="home">HOME</a></li> <!-- Home link -->
+            <li><a href="CONTACT US">CONTACT US</a></li> <!-- Contact Us link -->
+            <li><a href="menu">MENU</a></li> <!-- Menu link -->
+            <li><a href="sign in">SIGN IN</a></li> <!-- Sign In link -->
+            <li><a href="about">ABOUT</a></li> <!-- About link -->
+
+        </ul>
+    </nav>
+</header>
+
+<div class="banner">
+    <div class="content">
+        <h1>Pizza is the answer, no matter what the question is.</h1> <!-- Heading for the main section of the site -->
+        <h2>ORDER YOUR PIZZA</h2> <!-- Tagline for the site -->
+
+    </div>
+</div>
+<main>
+    <h3>Order Your Pizza</h3>  <!-- Subheading for the main section of the site -->
+    <form method="post" >
+        <label for="num-pizzas">Number of Pizzas:</label> <!-- Label for the number of pizzas input field -->
+        <input type="number" id="num-pizzas" name="num-pizzas" min="1" max="10" required> <!-- Input field for the number of pizzas -->
+        <label for="size">Size:</label> <!-- Label for the size select dropdown and so on-->
+        <select id="size" name="size" required>
+            <option value="">--Please choose an option--</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <label for="cheese">Cheese:</label>
+        <select id="cheese" name="cheese" required>
+            <option value="">--Please choose an option--</option>
+            <option value="light">Light</option>
+            <option value="medium">Medium</option>
+                <option value="double">Double</option>
+        </select>
+        <label for="toppings">Toppings:</label> <!-- Label for the toppings list -->
+        <ul id="toppings"> <!-- List of available toppings -->
+            <li><input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni</li>
+            <li><input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms</li>
+            <li><input type="checkbox" name="toppings[]" value="olives">Olives</li>
+            <li><input type="checkbox" name="toppings[]" value="onions">Onions</li>
+            <li><input type="checkbox" name="toppings[]" value="brooklyn Pepperoni">Brooklyn Pepperoni</li>
+            <li><input type="checkbox" name="toppings[]" value="ham">Ham"</li>
+            <li><input type="checkbox" name="toppings[]" value="philly Steak">Philly Steak</li>
+            <li><input type="checkbox" name="toppings[]" value="chicken">Chicken</li>
+        </ul>
+        <label for="sauce">Sauce:</label>
+        <ul id="sauce">
+            <li><input type="checkbox" name="sauce[]" value="garlic Parmesan Sauce">Garlic Parmesan Sauce</li>
+            <li><input type="checkbox" name="sauce[]" value="ranch Dressing">Ranch Dressing</li>
+            <li><input type="checkbox" name="sauce[]" value="hearty Marinara Sauce">Hearty Marinara Sauce</li>
+            <li><input type="checkbox" name="sauce[]" value="bBQ Sauce">BBQ Sauce</li>
+        </ul>
+
+
+
+
+        <label for="Name">Name:</label> <!-- Label for the name input field and so on-->
+        <input type="Name" id="Name" name="Name" required>
+
+        <label for="address">Address:</label>
+        <input type="address" id="address" name="address" required>
+
+        <label for="Postal Code">Postal Code:</label>
+        <input type="Postal Code" id="Postal Code" name="Postal Code" required>
+
+        <label for="Contact NO">Contact NO:</label>
+        <input type="contact NO" id="Contact NO" name="Contact NO" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <input type="submit" value="Place Order">
+    </form>
+</main>
+<footer>
+    <p>&copy;  2023 My Pizza Site. All rights reserved.</p>  <!-- Copyright information -->
+</footer>
+
+</body>
+</html>
